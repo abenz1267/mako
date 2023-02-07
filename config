@@ -1,5 +1,21 @@
 font=Noto Sans 12
-default-timeout=3000
-background-color=#2b303bCC
+default-timeout=5000
+background-color=#FFA066
+text-color=#16161D
 border-size=0
+border-color=#16161D
+padding=10
 anchor=top-center
+
+[summary="Reminder"]
+background-color=#DCD7BA
+default-timeout=0
+on-notify=exec play /usr/share/sounds/freedesktop/stereo/message.oga
+
+[summary="Screenshot"]
+default-timeout=10000
+on-button-left=exec nautilus $HOME/Pictures/
+
+[summary="Recorder"]
+default-timeout=5000
+on-button-left=exec nautilus $HOME/Videos/
